@@ -14,22 +14,22 @@
 		
 		<header>
 			<div id="logo">
-				<a href="#accueil"><img src="https://img.icons8.com/pastel-glyph/64/285F6F/surf-and-palm.png" alt="Logo: Deux planches plantées dans le sable, un palmier à côté"></a>
+				<a href="#accueil"><img src="https://img.icons8.com/pastel-glyph/64/ffffff/surf-and-palm.png" alt="Logo: Deux planches plantées dans le sable, un palmier à côté"></a>
 			</div>
 			<div id="menu">
 				<button id="ouvrir-menu">
-					<img src="https://img.icons8.com/ios/90/285F6F/xbox-menu.png" alt="Bouton menu">
+					<img src="https://img.icons8.com/ios/90/ffffff/xbox-menu.png" alt="Bouton menu">
 				</button>
-				<nav style="display: none">
+				<nav id="navbar" style="display: none">
 					<button id="fermer-menu">
-						<img src="https://img.icons8.com/ios/100/285F6F/cancel.png" alt="Fermer le menu">
+						<img src="https://img.icons8.com/ios/100/ffffff/cancel.png" alt="Fermer le menu">
 					</button>
 					<ul>
-						<li><a href="#groupe">Cours en groupe</a></li>
-						<li><a href="#solo">Cours particulier</a></li>
-						<li><a href="#about">Qui sommes-nous ?</a></li>
-						<li><a href="#tarifs">Tarifs</a></li>
-						<li><a href="#contact">Contact</a></li>
+						<li class="nav-links"><a href="#groupe">Cours en groupe</a></li>
+						<li class="nav-links"><a href="#solo">Cours particuliers</a></li>
+						<li class="nav-links"><a href="#about">Qui sommes-nous ?</a></li>
+						<li class="nav-links"><a href="#tarifs">Tarifs</a></li>
+						<li class="nav-links"><a href="#contact">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -43,7 +43,6 @@
 					<p>Dès 5 ans</p>
 					<a href="#groupe">En savoir plus</a>
 			</section>
-			
 			
 			<section id="groupe">
 				<div id="groupe-photo"></div>
@@ -76,9 +75,7 @@
 			<div class="separateur"></div>
 			
 			<section id="about">
-				<div id="about-photo">
-					<img src="#" alt="#">
-				</div>
+				<div id="about-photo"></div>
 				<div id="about-div">
 					<h3>Qui sommes-nous ?</h3>
 					<p>Amoureux du surf depuis notre plus jeune âge, nous avons toujours souhaité partager notre passion avec le plus grand nombre.</p>
@@ -91,9 +88,10 @@
 			<div class="separateur"></div>
 			
 			<section id="tarifs">
+				<h3>Tarifs</h3>
 				<div id="tarifs-div">
 					<div class="tarifs-item">
-						<h5>SESSION EN GROUPE</h5>
+						<h5>SESSION GROUPE</h5>
 						<p>16 ans et plus</p>
 						<h4>45€</h4>
 						<button class="tarifs-bouton">S'inscrire</button>
@@ -102,13 +100,16 @@
 						<img src="https://images.unsplash.com/photo-1489343970971-452ba8e1548d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1700&q=80" alt="Deux surfeurs marchant vers la mer">
 					</div>
 					<div class="tarifs-item">
-						<h5>SESSION EN GROUPE</h5>
+						<h5>SESSION GROUPE</h5>
 						<p>De 5 à 15 ans</p>
 						<h4>40€</h4>
 						<button class="tarifs-bouton">S'inscrire</button>
 					</div>
 					<div class="tarifs-photo">
 						<img src="https://images.unsplash.com/photo-1455264646464-fb8b45ab4c57?ixlib=rb-1.2.1&auto=format&fit=crop&w=2049&q=80" alt="Surfeur sur une vague">
+					</div>
+					<div class="tarifs-photo">
+						<img src="https://images.unsplash.com/photo-1462869910912-c1071bfb2fe7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1700&q=80" alt="Surfeuse marchant dans l'eau">
 					</div>
 					<div class="tarifs-item">
 						<h5>SESSION SOLO</h5>
@@ -117,32 +118,30 @@
 						<button class="tarifs-bouton">S'inscrire</button>
 					</div>
 					<div class="tarifs-photo">
-						<img src="https://images.unsplash.com/photo-1462869910912-c1071bfb2fe7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1700&q=80" alt="Surfeuse marchant dans l'eau">
+						<img src="https://images.unsplash.com/photo-1591282063405-1752516fd16e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2018&q=80" alt="Surfeur sur sa planche, dans un rouleau">
 					</div>
 					<div class="tarifs-item">
 						<h5>SESSION FAMILLE</h5>
-						<p>Dès 10 ans - 3 personnes minimum</p>
+						<p>Dès 10 ans</p>
+						<p>3 personnes minimum</p>
 						<h4>45€</h4>
 						<button class="tarifs-bouton">S'inscrire</button>
 					</div>
-					<div class="tarifs-photo">
-						<img src="https://images.unsplash.com/photo-1591282063405-1752516fd16e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2018&q=80" alt="Surfeur sur sa planche, dans un rouleau">
-					</div>
+					
 				</div>
 				<div id="tarifs-details" style="display: none">
 					<h3>Inscription</h3>
 					<p>Les inscriptions se font uniquement par téléphone, du lundi au samedi, de 10h à 18h.</p>
 					<p>Merci de votre compréhension !</p>
 					<p>05.58.64.OO.OO</p>
+					<button class="tarifs-bouton" id="fermer-inscription">Compris !</button>
 				</div>
 			</section>
 			
 			<div class="separateur"></div>
 			
 			<section id="contact">
-				<div id="contact-img">
-					<img src="https://images.unsplash.com/photo-1517699418036-fb5d179fef0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3291&q=80" alt="Deux surfeurs regardant la mer, planche sous le bras, au coucher du soleil">
-				</div>
+				<div id="contact-img"></div>
 				<div id="contact-div">
 					<h3>Contact</h3>
 					<p>Vous avez une question ou vous souhaitez vous inscrire à un cours ?</p>
@@ -161,7 +160,15 @@
 			</section>
 			
 		</main>
-		<div id="mentions-legales" style="display: none">
+		
+		
+		<footer>
+			<div class="separateur">
+				<button id="ouvrir-mentions">Mentions légales</button>
+				<span> | </span>
+				<p>©2020</p>
+			</div>
+			<div id="mentions-legales" style="display: none">
 			<h3>Mentions légales</h3>
 			<p>Logo : Surf And Palm icon, par <a href="https://icons8.com/icon/ObK1w-DhtmBB/surf-and-palm">Icons8</a></p>
 			<p>Bouton menu : Xbox Menu icon, par <a href="https://icons8.com/icon/17144/xbox-menu">Icons8</a></p>
@@ -172,20 +179,15 @@
 				<li>Guy Kawasaki, depuis <a href="https://images.unsplash.com/photo-1526485641275-3b11a42acd44?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80">Unsplash</a></li>
 				<li>Clément Gerbaud, depuis <a href="https://images.unsplash.com/photo-1511291498659-aff8bffd84d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1987&q=80">Unsplash</a></li>
 				<li>Conor Sexton, depuis <a href="https://images.unsplash.com/photo-1507166763745-bfe008fbb831?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80">Unsplash</a></li>
-				<li></li>
-				
+				<li>Léa Dubedout, depuis <a href="https://unsplash.com/photos/8qYThFAxsCs">Unsplash</a></li>
 				<li>Seth Doyle, depuis <a href="https://unsplash.com/photos/VpA4sXZKeXQ">Unsplash</a></li>
 				<li>Thomas Ashlock, depuis <a href="https://images.unsplash.com/photo-1455264646464-fb8b45ab4c57?ixlib=rb-1.2.1&auto=format&fit=crop&w=2049&q=80">Unsplash</a></li>
 				<li>Terrell Woods, depuis <a href="https://images.unsplash.com/photo-1462869910912-c1071bfb2fe7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1700&q=80">Unsplash</a></li>
 				<li>Lucas Borges, depuis <a href="https://images.unsplash.com/photo-1591282063405-1752516fd16e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2018&q=80">Unsplash</a></li>
 				<li>Sacha Verheij, depuis <a href="https://images.unsplash.com/photo-1517699418036-fb5d179fef0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3291&q=80">Unsplash</a></li>
 			</ul>
+			<button id="fermer-mentions">Fermer</button>
 		</div>
-		
-		<footer>
-			<button>Mentions légales</button>
-			<span> | </span>
-			<p>©2020</p>
 		</footer>
 		
 		
