@@ -1,60 +1,47 @@
 /* GENERAL */
 
 :root{
-	--main-color: rgba(40,95,111,1.00);
+	--main-color: rgb(31, 52, 77);
 }
-
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
-
 html{
 	font-size: 62.5%;
 	scroll-behavior: smooth;
 }
-
 body{
 	margin-top: 80px;
 }
-
 li{
 	list-style: none;
 }
-
 a{
 	color: inherit;
 	text-decoration: none;
 }
-
 h1, h3{
 	font-family: 'Rowdies', cursive;
 	text-transform: uppercase;
 }
-
 h3{
 	color: var(--main-color);
 	font-size: 5rem;
 }
-
 h5{
 	font-size: 1.8rem;
 	margin: 20px 0 20px 25px;
 }
-
 h4, h5, p{
 	font-family: 'Lato', sans-serif;
 }
-
 .span-text{
 	color: transparent;
 }
 
-
-
 /* HEADER */
-
 header{
 	width: 100%;
 	padding: 5px 20px 3px 25px;
@@ -65,7 +52,6 @@ header{
 	justify-content: space-between;
 	z-index: 10;
 }
-
 header::before{
 	content: "";
 	width: 100%;
@@ -76,7 +62,6 @@ header::before{
 	background-color: var(--main-color);
 	z-index: -5;
 }
-
 #ouvrir-menu, #fermer-menu{
 	width: 72px;
 	height: 72px;
@@ -84,16 +69,12 @@ header::before{
 	border: none;
 	cursor: pointer;
 }
-
 #ouvrir-menu img, #fermer-menu img{
 	width: 72px;
 	height: 72px;
 }
 
-
-
 /* NAVBAR */
-
 #navbar{
 	width: 300px;
 	height: 100vh;
@@ -111,28 +92,22 @@ header::before{
 	text-transform: uppercase;
 	background-color: var(--main-color);
 }
-
 #fermer-menu{
 	position: absolute;
 	top: 5px;
 	right: 20px;
 }
-
 .nav-links{
 	margin: 6vh 0;
 	text-align: center;
 }
-
 .nav-links:hover{
 	-webkit-transform: scale(1.05);
 	-moz-transform: scale(1.05);
 	transform: scale(1.05);
 }
 
-
-
 /* ACCUEIL */
-
 #accueil{
 	width: 100vw;
 	height: 100vh;
@@ -144,7 +119,6 @@ header::before{
 	color: #fff;
 	text-align: center;
 }
-
 #accueil::before{
 	content: "";
 	height: 100vh;
@@ -153,14 +127,13 @@ header::before{
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: url("https://images.unsplash.com/photo-1458592918806-99f9cfbe41fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=4288&q=80") center center;
+	background: url("img/background-img.jpg") center center;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
 	background-size: cover;
 	z-index: -10;
 }
-
 #accueil::after{
 	content: "";
 	width: 100%;
@@ -168,30 +141,25 @@ header::before{
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-color: rgba(30,144,255,0.17);
-	z-index: -5;
+	background-color: rgba(44, 109, 173, 0.3);
+	z-index: 0;
 }
-
 #accueil h1{
 	margin-top: -80px;
 	font-size: 10rem;
 	letter-spacing: 5px;
-	text-shadow: 0 0 2px var(--main-color);
 	z-index: 5;
 }
-
 #accueil h4{
 	margin: 5px 0;
 	font-size: 2.5rem;
 	z-index: 5;
 }
-
 #accueil p{
 	font-size: 2.1rem;
 	font-weight: normal;
 	z-index: 5;
 }
-
 #accueil a{
 	width: 250px;
 	height: 55px;
@@ -206,17 +174,13 @@ header::before{
 	border-radius: 3px;
 	z-index: 5;
 }
-
 #accueil a:hover{
 	-webkit-transform: scale(0.97);
 	-moz-transform: scale(0.97);
 	transform: scale(0.97);
 }
 
-
-
 /* GROUPE */
-
 #groupe, #solo, #about, #contact{
 	width: 100%;
 	padding: 95px 60px;
@@ -226,7 +190,6 @@ header::before{
 	align-items: center;
 	justify-content: space-around;
 }
-
 #groupe-photo{
 	width: 560px;
 	height: 373px;
@@ -235,7 +198,6 @@ header::before{
 	background-image: url("https://images.unsplash.com/photo-1526485641275-3b11a42acd44?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80");
 	background-size: contain;
 }
-
 #groupe-photo::before{
 	content: "";
 	width: 560px;
@@ -245,26 +207,20 @@ header::before{
 	left: 0;
 	background-color: rgba(28,172,255,0.17);
 }
-
 #groupe-div, #about-div{
 	width: 30vw;
 	min-width: 344px;
 	padding: 0 10px
 }
-
 #groupe-div p, #solo-div p, #about p, #contact p, #contact a{
 	font-size: 1.7rem;
 	text-align: justify;
 }
-
 #groupe-div p{
 	margin-left: 40px;
 }
 
-
-
 /* SOLO */
-
 #solo-photo{
 	width: 492px;
 	height: 505px;
@@ -273,7 +229,6 @@ header::before{
 	background-image: url("https://images.unsplash.com/photo-1511291498659-aff8bffd84d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1987&q=80");
 	background-size: contain;
 }
-
 #solo-photo::before{
 	content: "";
 	width: 492px;
@@ -283,21 +238,16 @@ header::before{
 	left: 0;
 	background-color: rgba(28,172,255,0.10);
 }
-
 #solo-div{
 	width: 38vw;
 	min-width: 412px;
 	padding: 0 10px;
 }
-
 #solo-div p{
 	margin: 0 40px;
 }
 
-
-
 /* SEPARATEURS*/
-
 .separateur{
 	width: 100%;
 	height: 160px;
@@ -305,10 +255,7 @@ header::before{
 	background-attachment: fixed, scroll;
 }
 
-
-
 /* QUI SOMMES-NOUS */
-
 #about-photo{
 	width: 560px;
 	height: 373px;
@@ -317,7 +264,6 @@ header::before{
 	background-image: url("https://images.unsplash.com/photo-1447348590098-cdf42d4b75ec?ixlib=rb-1.2.1&auto=format&fit=crop&w=2700&q=80");
 	background-size: contain;
 }
-
 #about-photo::before{
 	content: "";
 	width: 560px;
@@ -327,19 +273,14 @@ header::before{
 	left: 0;
 	background-color: rgba(164,231,255,0.21);
 }
-
 #about-div h3{
 	margin-bottom: 20px;
 }
-
 #about-div p{
 	margin: 10px 0 0 25px;
 }
 
-
-
 /* TARIFS */
-
 #tarifs{
 	width: 100%;
 	padding: 95px 60px;
@@ -348,7 +289,6 @@ header::before{
 	flex-direction: column;
 	position: relative;
 }
-
 #tarifs-div{
 	margin-top: 25px;
 	align-self: center;
@@ -356,13 +296,11 @@ header::before{
 	grid-template-columns: auto auto auto auto;
 	grid-template-rows: auto auto;
 }
-
 #tarifs-div h4{
 	color: var(--main-color);
 	font-size: 1.6rem;
 	margin: 10px;
 }
-
 #tarifs-div h5{
 	color: var(--main-color);
 	margin: 13px 0;
@@ -370,12 +308,10 @@ header::before{
 	font-weight: 400;
 	text-transform: uppercase;
 }
-
 #tarifs-div p{
 	font-size: 1.5rem;
 	text-align: center;
 }
-
 .tarifs-photo img, .tarifs-item{
 	width: 225px;
 	height: 225px;
@@ -384,11 +320,9 @@ header::before{
 	justify-content: center;
 	align-items: center;
 }
-
 .tarifs-item{
 	background-color: rgba(164,231,255,0.21);
 }
-
 .tarifs-bouton{
 	width: 110px;
 	height: 33px;
@@ -404,13 +338,11 @@ header::before{
 	border: none;
 	cursor: pointer;
 }
-
 .tarifs-bouton:hover{
 	-webkit-transform: scale(0.97);
 	-moz-transform: scale(0.97);
 	transform: scale(0.97);
 }
-
 #tarifs-details{
 	width: 100%;
 	height: 100%;
@@ -423,16 +355,13 @@ header::before{
 	align-items: center;
 	background-color: #fff;
 }
-
 #tarifs-details h3{
 	margin-bottom: 20px;
 }
-
 #tarifs-details p{
 	font-size: 2rem;
 	margin: 13px 0;
 }
-
 #tarifs-details .tarifs-bouton{
 	width: 160px;
 	height: 50px;
@@ -440,27 +369,21 @@ header::before{
 	font-size: 2rem;
 }
 
-
-
 /* CONTACT */
-
 #contact p, #contact a{
 	margin: 5px 0 0 25px;
 	font-family: 'Lato', sans-serif;
 	font-style: normal;
 	text-align: justify;
 }
-
 #contact a{
 	text-decoration: underline;
 }
-
 #contact-div{
 	width: 30vw;
 	min-width: 344px;
 	padding: 0 10px
 }
-
 #contact-img{
 	width: 530px;
 	height: 298px;
@@ -468,24 +391,19 @@ header::before{
 	background-size: contain;
 }
 
-
-
 /* FOOTER */
-
 footer{
 	width: 100%;
 	height: 60px;
 	position: relative;
 	color: #fff;
 }
-
 footer .separateur{
 	height: 60px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-
 #ouvrir-mentions{
 	height: 20px;
 	color: #fff;
@@ -495,17 +413,14 @@ footer .separateur{
 	border: none;
 	cursor: pointer;
 }
-
 footer span{
 	margin: 3px 10px 0 10px;
 	font-size: 2rem;
 }
-
 footer p{
 	margin-top: 2px;
 	font-size: 1.3rem;
 }
-
 #mentions-legales{
 	width: 100%;
 	display: flex;
@@ -517,14 +432,12 @@ footer p{
 	background-color: #fff;
 	text-align: center;
 }
-
 #mentions-legales p, #mentions-legales li{
 	margin: 5px 0;
 	color: #000;
 	font-family: 'Lato', sans-serif;
 	font-size: 1.6rem;
 }
-
 #fermer-mentions{
 	width: 115px;
 	height: 40px;
@@ -541,18 +454,13 @@ footer p{
 	border: none;
 	cursor: pointer;
 }
-
 #fermer-mentions:hover{
 	-webkit-transform: scale(0.97);
 	-moz-transform: scale(0.97);
 	transform: scale(0.97);
 }
 
-
-
-
 /* RESPONSIVE */
-
 @media screen and (max-width: 1023px){
 	h3{
 		font-size: 4rem;
@@ -602,7 +510,6 @@ footer p{
 		margin: 10px 0 10px 15px;
 		font-size: 1.5rem;
 	}
-	
 	/* NAVBAR */
 	#navbar{
 		width: 100vw;
@@ -612,7 +519,6 @@ footer p{
 	.nav-links{
 		margin: 5vh 0;
 	}
-
 	/* ACCUEIL */
 	#accueil{
 		width: 100%;
@@ -635,7 +541,6 @@ footer p{
 		margin: 20px 0;
 		font-size: 2rem;
 	}
-
 	/* GROUPE */
 	#groupe, #solo, #about{
 		padding: 40px 0px;
@@ -753,7 +658,6 @@ footer p{
 		height: 146px;
 		margin: 30px 0;
 	}
-
 	/* FOOTER */
 	#mentions-legales{
 		padding: 40px 20px;
